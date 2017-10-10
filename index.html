@@ -12,7 +12,9 @@ and open the template in the editor.
     </head>
     <body>
         <script>
-            window.location.replace("lampridiforme.github.io");
+            if (window.location.href.indexOf('http://niko.github.com') === 0) {
+                window.location.href = 'http://casperjs.org{{ page.url }}';
+            }
         </script>
         <div></div>
     </body>
