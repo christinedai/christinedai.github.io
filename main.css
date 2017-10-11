@@ -34,6 +34,7 @@ body {
     font-size: 3vh;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    text-decoration: underline;
 }
 
 .sidebyside {
@@ -83,3 +84,7 @@ a {
     cursor: pointer;
 }
 
+.desc {
+    padding-right: 20%;
+    padding-left: 20%;
+}
