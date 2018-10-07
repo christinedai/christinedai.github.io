@@ -37,10 +37,10 @@ body {
 
 .small {
     padding-top: 1vh;
-    font-size: 3vh;
+    font-size: 25px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .sidebyside {
@@ -74,7 +74,7 @@ body {
 }*/
 
 a:visited {
-    color: #353432;
+    color: #667996 /*#353432*/;
 }
 
 a:hover {
@@ -85,7 +85,7 @@ a:hover {
 
 a {
     text-decoration: none;
-    color: #353432;
+    color: #667996;
     transition: all 0.5s ease;
 }
 
