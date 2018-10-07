@@ -22,15 +22,18 @@ body {
 a:link {
     color: white;
     text-decoration: none;
+    text-shadow: 0 0 20px black
 }
 
 a:visited, a:hover {
     color: #898989;
     text-decoration: none;
+    text-shadow: 0 0 20px black
 }
 
 a:visited:hover {
     color: white;
+    text-shadow: 0 0 20px black
 }
 
 footer {

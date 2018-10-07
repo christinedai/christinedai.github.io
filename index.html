@@ -13,56 +13,134 @@ and open the template in the editor.
         <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
     </head>
     <body>
+        <div id="logodiv" style="text-align: center; margin-top: 5vh; margin-bottom: 5vh; margin-left: calc(50% - 65px); box-shadow: 0 0 0 2.5pt white, 0 0 0 10pt black;">
+            <img id="logo" src="./img/logo.svg" style="width: 100px; height: 105px;"/>
+        </div>
         <div id="wrapper">
             <div id="contentwrapper">
-                <div id="about">
+                
+                <div id="about" class="section">
                     <div class="title">
                         CHRISTINE DAI
                     </div>
                     <div class="sidebyside">
                         <p>
-                            A third year computer science undergraduate at UCSD interested in full stack development.
+                            Computer science undergraduate at UCSD with an interest in full stack development.
                             <br>
                             <br>
                             Email: <a href="mailto:christinedai2015@gmail.com">christinedai2015@gmail.com</a>
+                            <br>
+                            Phone: <span class="mocklink">661-210-6021</span>
                         </p>
                     </div>
                 </div>
-                <div id="projects">
+                <div id="projects" class="section">
                     <div id="projectwrapper">
                         <div class="title">
                             PROJECTS
                         </div>
-                        <div id="project1">
+                        <div>
                             <div class="small">
-                                <a href="birdwatch.html">BIRDWATCHER SIMULATOR X000</a>
+                                <a href="https://docs.google.com/presentation/d/13yd9QJgD1dwVHyf3nataVL-pLbKqLNQx6wJjtKTAGFU/edit?usp=sharing" target="_BLANK"><span class="hover">GIGACHECK APP</span></a>
                             </div>
                             <div class="sidebyside">
                                 <p class="desc">
-                                    An incremental game heavily inspired by Cookie Clicker, a popular game of the same genre. While technically a work in progress because most of the art assets are unfinished, all coding for the base game is complete.
+                                    An app I helped prototype new features for during my 2018 summer internship at Greenlee. 
+                                    <br>
+                                    The goal was to bring a WiFi heatmapping feature from an older product into the new GigaCheck system, which would allow technicians to quickly measure and show clients where the WiFi connection is strongest in a house. The technician could do so by drawing a floorplan in the app, taking measurements with firmware, and then displaying the combined heatmap-layout render to the client. 
+                                    <br>
+                                    The app was written in Javascript as an AngularJS (v1) based Single Page Application. PhoneGap/Apache Cordova was used to port the app over to Android and iOS. The floorplan illustrator was implemented using Javascript to manipulate SVG elements, and the heatmap renderer relied on HTML5 canvases and SVG manipulation. Styling was done using Bootstrap.
+                                    <br>
+                                    The app was presented to the engineering department and potential clients, and recieved positive feedback. Documentation was written to ensure the new features were well recorded. 
                                 </p>
                             </div>
                         </div>
-                        <div id="project2">
+                        <div>
                             <div class="small">
-                                <a href="arborsplash.html">ARBOR</a>
+                                <a href="https://lampridiforme.github.io/" target="_BLANK">LAMPRIDIFORME</a>
                             </div>
                             <div class="sidebyside">
                                 <p class="desc">
-                                    Arbor is based on a now gone BBC browser game tie-in to the Walking with Dinosaurs series. The project is currently not done yet. 
+                                    An anonymous site I use for personal projects. I have a number of smaller projects on this site, such as 
+                                    <a href="https://lampridiforme.github.io/arbor/arborsplash.html" target="_BLANK">Arbor</a>, an attempt at resurrecting a dead text adventure game from the early 2000s, <a href="">Birdwatcher Simulator</a>, a simple incremental game, and implementations for <a href="https://lampridiforme.github.io/conway/index.html" target="_BLANK">Conway's Game of Life</a> and <a href="https://lampridiforme.github.io/weasel/index.html" target="_BLANK">Dawkin's Weasel</a>.
                                 </p>
                             </div>
                         </div>
-                        <div id="project3">
+                        <div>
                             <div class="small">
-                                <a href="https://lampridiforme.github.io/">LAMPRIDIFORME</a>
+                                <a href="https://lampridiforme.github.io/HushKeyDocs/" target="_BLANK"><span class="hover">TEST GENERATOR</span></a>
                             </div>
                             <div class="sidebyside">
                                 <p class="desc">
-                                    An anonymous personal site I use for in-progress projects and art.
+                                    An automatic test generator that takes in a formatted test in plaintext and generates a digital version that can be taken on a device in lieu of paper, created as part of a professor-led project course.
+                                    <br>
+                                    I helped implement the parser portion of the generator by creating the front end using React UI and sending the parsed result to the backend database.  
                                 </p>
                             </div>
                         </div>
+                        <div>
+                            <div class="small">
+                                <a href="https://lampridiforme.github.io/HushKeyDocs/" target="_BLANK"><span class="hover">HUSHKEY</span></a>
+                            </div>
+                            <div class="sidebyside">
+                                <p class="desc">
+                                    A React-based secure social media site. Developed with Team Missing Tooth for a software engineering course. 
+                                    <br>
+                                    The codebase was forked from an existing social media site implementation. A development pipeline was implemented via Travis CI, which included automatic lint checks, unit testing, and end-to-end testing. The codebase will be inherited in other classes in later courses. All messages on the site are encrypted, and are only visible to friends.
+                                    <br>
+                                    My role was documentation, and I wrote documentation for each of the classes and their functionality to help the next team have an easier time understanding the codebase than our team did. 
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="small">
+                                <a href="https://github.com/lampridiforme/xeko" target="_BLANK">XEKO</a> 
+                            </div>
+                            <i style="opacity: .5;">(in progress)</i>
+                            <div class="sidebyside">
+                                <p class="desc">
+                                    An attempt to resurrect a dead card game called Xeko. The project has not gotten very far yet, but the majority of the game logic implementation has been planned out. The project will be written in ES6 Javascript and played in browser. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="skills" class="section">
+                    <div class="title">
+                        TECHNICAL SKILLS
+                    </div>
+                    <div class="sidebyside" style="text-align: center;">
+                        <div style="text-align: left; display: inline-block; padding-left: 4vw;">
+                            <p>
+                                <u>Languages</u>: Javascript, <abbr title="not really a language but ¯\_(ツ)_/¯">HTML5</abbr>, Java, C++, C
+                            </p>
+                            <p>
+                                <u>Frameworks</u>: Cordova/PhoneGap, AngularJS, React, Bootstrap
+                            </p>
+                            <p>
+                                <u>Tools</u>: UNIX, Git, Jira, Travis CI
+                            </p>
+                            <p>
+                                <u>Editors/IDEs</u>: Sublime Text, Vim, IntelliJ, CLion
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="courses" class="section">
+                    <div class="title">
+                        COURSES
+                    </div>
+                    <div class="sidebyside" style="text-align: center; margin-top: 2vh;">
+                        Interaction Design <i style="opacity: .5;">(current)</i> | Computer Security <i style="opacity: .5;">(current)</i> | Computer Graphics <i style="opacity: .5;">(current)</i> 
+                        <br>
+                        <br>
+                        Software Engineering | Compiler Construction | Artificial Intelligence
+                        <br>
+                        <br>
+                        Operating Systems | Database Principles | Web Client Languages
+                        <br>
+                        <br>
+                        Computer Architecture | Data Structures | Design and Analysis of Algorithms
                     </div>
                 </div>
             </div>
